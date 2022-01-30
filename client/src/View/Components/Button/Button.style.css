@@ -1,4 +1,11 @@
 .Button {
-    width: 10em;
-    color: red
+    width: 8em;
+    height: 3em;
+    color:#fff;
+    background: #25619F;
+    cursor: pointer;
+    border: none;
+    border-radius: 2px;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
