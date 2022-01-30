@@ -1,3 +1,19 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+.place-image {
+    width: 1200px;
+    height: 1200px;
+}
+.place {
+    text-align: left;
+}
+.place-name {
+    font-weight: 45px;
 }
