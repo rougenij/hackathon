@@ -1,12 +1,15 @@
 import './App.css';
-import Button from './View/Components/Button/Button';
+import Home from './View/Pages/HomePage/HomePage';
 
 function App() {
+
   return (
     <div className="App">
-<Button buttonText={'Explore'}/>
+     <Home/>
+
     </div>
   );
+
 }
 
 export default App;
