@@ -1,7 +1,8 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
 
 function App() {
+<<<<<<< HEAD
   return (
     <div className="App">
       <header className="App-header">
@@ -21,6 +22,9 @@ function App() {
       </header>
     </div>
   );
+=======
+  return <div className="App"></div>;
+>>>>>>> 845fe121674b26ed08d5111344ca5bca9fb259e8
 }
 
 export default App;
