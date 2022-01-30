@@ -26,4 +26,4 @@ const getAllSites = async (req, res) => {
   }
 };
 
-module.exports = { addSite };
+module.exports = { addSite, getAllSites };
