@@ -1,6 +1,5 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
 }
 .container {
     max-width: 1200px;
@@ -8,20 +7,21 @@ body {
     text-align: center;
 }
 .city {
-    font-size: 5vmin;
+    font-size: 4vmin;
 }
 .place {
     text-align: left;
     margin-top: 5vmin;
 }
 .place-name {
-    font-size: 4vmin;
+    font-size: 3vmin;
 }
 .place-image {
     width: 1200px;
     height: 900px;
 }
 .place-description {
-    font-size: 2vmin;
+    font-size: 1.7vmin;
+    line-height: 1.5;
     margin: 3vmin 0;
 }

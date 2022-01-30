@@ -3,62 +3,45 @@ import { useEffect, useState } from "react";
 import CitiesList from './CitiesList';
 import './CityPage.css';
 import cultourApi from "../../../Api/cultourApi";
+import NavBar from '../../Components/NavBar/NavBar';
+import { useParams } from 'react-router-dom';
 
 const CityPage = () => {
-	const [loading, setLoading] = useState(true);
-  const [sites, setSites] = useState([]);
-	//const [places, setPlaces] = useState([]);
-	//const [curCity, setCurCity] = useState("");
+	const paramsCity = 'Dead Sea';
+	const [sites, setSites] = useState([]);
+	//const params = useParams();
+	console.log(paramsCity);
 
-	const currentCity = 'Haifa';
-	const currentList = CitiesList.filter((places) => places.location==="Haifa");
-
-	useEffect(() => {
-    const fetchData = async () => {
-      setLoading(true);
-      try {
-        const { data: response } = await cultourApi.get("sites");
-        setSites(response.data.sites);
-      } catch (error) {
-        console.error(error.message);
-      }
-      setLoading(false);
-    };
-
+  useEffect(() => {
     fetchData();
-  }, []);
-
-
-	// useEffect(() => {
-	// 	getReq();
-	// }, [places]);
-
-	// const getReq = async () => {
-	// 	try {
-	// 		const { requestData } = await cultourApi.get("sites");
-	// 		setPlaces(requestData);
-	// 		console.log(places)
-	// 	} catch (e) {
-	// 		console.error(e.message)
-	// 	}
-	// };
-	// console.log(places)
+	}, []);
 	
+	const fetchData = async () => {
+		try {
+			//const { data } = await cultourApi.get(`sites/${params.city}`);
+			const { data } = await cultourApi.get("sites");
+			console.log(data);
+			setSites(data);
+		} catch (error) {
+			console.error(error.message);
+		}
+	};
+
 	return (
-		<div className="container">
-			<h2 className="city">{currentCity}</h2>
-			{currentList.map((place, ind) => {
+		<div>
+			<NavBar />
+			<div className="container">
+			<h2 className="city">{paramsCity}</h2>
+			{sites.map((place, ind) => {
 				return (
 					<div className="place" key={`place${ind}`}>
 						<h3 className="place-name">{place.name}</h3>
 						<div className="place-description">{place.description}</div>
-						{/* {place.description.map((par, index) => {
-								return <p key={index}>{par}</p>
-						})} */}
-							<img className="place-image" src={place.image} alt=""/>
+						<img className="place-image" src={place.image} alt=""/>
 					</div>
 				)
 			})}
+		</div>
 		</div>
 	)
 }
