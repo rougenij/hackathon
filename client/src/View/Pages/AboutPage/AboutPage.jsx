@@ -2,7 +2,7 @@ import React from "react";
 import { useEffect, useState } from "react";
 import cultourApi from "../../../Api/cultourApi";
 
-function AboutPage(props) {
+function AboutPage() {
   const [loading, setLoading] = useState(true);
   const [sites, setSites] = useState([]);
 
@@ -10,8 +10,9 @@ function AboutPage(props) {
     const fetchData = async () => {
       setLoading(true);
       try {
-        const { data: response } = await cultourApi.get("sites");
-        setSites(response.data.sites);
+        const { data } = await cultourApi.get("sites");
+        console.log(data);
+        setSites(data);
       } catch (error) {
         console.error(error.message);
       }
@@ -27,9 +28,9 @@ function AboutPage(props) {
       {loading && <div>Loading</div>}
       {!loading && (
         <div>
-          <h2>Bank Accounts</h2>
+          <h2>Sites</h2>
           {sites.map((site) => (
-            <div>{site}</div>
+            <div key={site._id}>{site._id}</div>
           ))}
         </div>
       )}
