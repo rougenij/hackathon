@@ -18,13 +18,14 @@
 .Details {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #fff;
-  justify-content: center;
-  text-align: center;
   height: 50vh;
+  margin-top: 15%;
 }
 
 .Main {
   width: 90vw;
   height: 70vh;
   display: flex;
+  justify-content: center;
+  text-align: center;
 }
