@@ -25,3 +25,6 @@ body {
     line-height: 1.5;
     margin: 3vmin 0;
 }
+.navbar {
+    background-color: yellow;
+}

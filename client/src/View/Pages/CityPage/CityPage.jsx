@@ -1,13 +1,13 @@
 import React from 'react';
 import { useEffect, useState } from "react";
-import CitiesList from './CitiesList';
+//import CitiesList from './CitiesList';
 import './CityPage.css';
 import cultourApi from "../../../Api/cultourApi";
 import NavBar from '../../Components/NavBar/NavBar';
-import { useParams } from 'react-router-dom';
+//import { useParams } from 'react-router-dom';
 
 const CityPage = () => {
-	const paramsCity = 'Dead Sea';
+	const paramsCity = 'Haifa';
 	const [sites, setSites] = useState([]);
 	//const params = useParams();
 	console.log(paramsCity);
@@ -19,7 +19,7 @@ const CityPage = () => {
 	const fetchData = async () => {
 		try {
 			//const { data } = await cultourApi.get(`sites/${params.city}`);
-			const { data } = await cultourApi.get("sites");
+			const { data } = await cultourApi.get(`/cities/${paramsCity}`);
 			console.log(data);
 			setSites(data);
 		} catch (error) {
@@ -28,9 +28,8 @@ const CityPage = () => {
 	};
 
 	return (
-		<div>
+		<div className="container">
 			<NavBar />
-			<div className="container">
 			<h2 className="city">{paramsCity}</h2>
 			{sites.map((place, ind) => {
 				return (
@@ -41,7 +40,6 @@ const CityPage = () => {
 					</div>
 				)
 			})}
-		</div>
 		</div>
 	)
 }
