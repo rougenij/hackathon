@@ -10,7 +10,7 @@ function AboutPage(props) {
     const fetchData = async () => {
       setLoading(true);
       try {
-        const { data: response } = await cultourApi.get("/sites");
+        const { data: response } = await cultourApi.get("sites");
         setSites(response.data.sites);
       } catch (error) {
         console.error(error.message);
