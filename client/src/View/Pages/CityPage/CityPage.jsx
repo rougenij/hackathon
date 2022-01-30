@@ -3,24 +3,25 @@ import CitiesList from './CitiesList';
 import './CityPage.css'
 
 const CityPage = () => {
-    return (
-        <div>
-            <h2>{CitiesList[0].city}</h2>
-            {CitiesList[0].placesList.map((place) => {
-               return (
-                   <div>
-                       <h3>{place.placeName}</h3>
-                       <img className="place-image" src={place.imageUrl} alt=""/>
-                       {place.description.map((par) => {
-                           return <p>{par}</p>
-                       })}
-                   </div>
-               )
-            })
-            }   
-            
-        </div>
-    )
+	//const currentCity = props
+	const currentCity = 'Haifa';
+	const currentList = CitiesList.filter((places) => places.location==="Haifa")
+	return (
+		<div className="container">
+			<h2>{currentCity}</h2>
+			{currentList.map((place) => {
+				return (
+					<div className="place">
+						<h3 className="place-name">{place.name}</h3>
+						{place.description.map((par) => {
+								return <p>{par}</p>
+						})}
+							<img className="place-image" src={place.image} alt=""/>
+					</div>
+				)
+			})}
+		</div>
+	)
 }
 
 export default CityPage;
