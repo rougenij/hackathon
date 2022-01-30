@@ -4,13 +4,13 @@ import { useEffect, useState } from "react";
 import './CityPage.css';
 import cultourApi from "../../../Api/cultourApi";
 import NavBar from '../../Components/NavBar/NavBar';
-//import { useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 
 const CityPage = () => {
-	const paramsCity = 'Haifa';
+
 	const [sites, setSites] = useState([]);
-	//const params = useParams();
-	console.log(paramsCity);
+	const params = useParams();
+	console.log("params", params.city);
 
   useEffect(() => {
     fetchData();
@@ -18,8 +18,8 @@ const CityPage = () => {
 	
 	const fetchData = async () => {
 		try {
-			//const { data } = await cultourApi.get(`sites/${params.city}`);
-			const { data } = await cultourApi.get(`/cities/${paramsCity}`);
+			
+			const { data } = await cultourApi.get(`/cities/${params.city}`);
 			console.log(data);
 			setSites(data);
 		} catch (error) {
@@ -28,18 +28,20 @@ const CityPage = () => {
 	};
 
 	return (
+		<div> <NavBar />
+		
 		<div className="container">
-			<NavBar />
-			<h2 className="city">{paramsCity}</h2>
+			<h2 className="city">{params.city}</h2>
 			{sites.map((place, ind) => {
 				return (
 					<div className="place" key={`place${ind}`}>
-						<h3 className="place-name">{place.name}</h3>
+						<h3 className="place-name">{(place.name).slice(2)}</h3>
 						<div className="place-description">{place.description}</div>
 						<img className="place-image" src={place.image} alt=""/>
 					</div>
 				)
 			})}
+		</div>
 		</div>
 	)
 }
