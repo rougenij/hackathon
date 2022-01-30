@@ -4,7 +4,11 @@ import HomePage from './View/Pages/HomePage/HomePage';
 function App() {
   return (
     <div className="App">
-<HomePage/>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        {/* <Route path="/citypage" element={<CityPage />} />
+        <Route path="/about" element={<AboutPage />} /> */}
+      </Routes>
     </div>
   );
 }
