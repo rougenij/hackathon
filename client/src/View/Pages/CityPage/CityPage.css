@@ -7,13 +7,21 @@ body {
     margin: auto;
     text-align: center;
 }
-.place-image {
-    width: 1200px;
-    height: 1200px;
+.city {
+    font-size: 5vmin;
 }
 .place {
     text-align: left;
+    margin-top: 5vmin;
 }
 .place-name {
-    font-weight: 45px;
+    font-size: 4vmin;
+}
+.place-image {
+    width: 1200px;
+    height: 900px;
+}
+.place-description {
+    font-size: 2vmin;
+    margin: 3vmin 0;
 }
