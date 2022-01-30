@@ -1,4 +1,9 @@
 .Button {
-    width: 10em;
-    color: red
+    width: 8em;
+    height: 3em;
+    color: #fff;
+    cursor: pointer;
+    background: #25619F;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: none;
 }
