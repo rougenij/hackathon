@@ -34,15 +34,8 @@ function AboutPage() {
       {loading && <div>Loading</div>}
       {!loading && (
         <div>
-<<<<<<< HEAD
           <h2>Sites</h2>
-          {sites.map((site) => (
-            <div key={site._id}>{site._id}</div>
-          ))}
-=======
-          <h2>Bank Accounts</h2>
           {displayData()}
->>>>>>> rouge
         </div>
       )}
     </div>
