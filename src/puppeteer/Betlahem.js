@@ -25,8 +25,8 @@ const url =
     } catch (err) {
       console.log(err.message);
     }
+    console.log(Betlehem);
   });
-  console.log(Betlehem);
   //Needs to be Automated to add data
   //   const EilatCollection = async () => {
   //     try {

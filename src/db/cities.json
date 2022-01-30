@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Jerusalem",
+    "description": "This is the heart of the Holy Land, where the Jews raised the First Temple to keep the Ark of the Covenant safe, where Jesus was crucified and rose again, and where the Prophet Muhammad ascended to heaven to receive God's word.",
+    "pic1": "https://www.planetware.com/photos-large/ISR/israel-jerusalem-dome-of-the-rock.jpg",
+    "pic2": "https://www.planetware.com/photos-large/ISR/israel-jerusalem-wailing-wall-and-jewish-quarter.jpg"
+  },
+  {
+    "name": "Tel Aviv",
+    "description": "Nicknamed 'The White City', the town was awarded UNESCO World Heritage Status in 2003 in recognition of its fine examples of Bauhaus architecture (an early 20th-century Modernist style of building). There are also a number of art galleries and small, specialist museums for sightseeing off the beach.",
+    "pic1": "https://www.planetware.com/photos-large/ISR/israel-tel-aviv-beach.jpg",
+    "pic2": "https://www.planetware.com/photos-large/ISR/israel-tel-aviv-jaffa-port.jpg"
+  },
+  {
+    "name": "Haifa",
+    "description": "Modern Haifa is a bustling port town, but unlike many industry-focused cities, its landscape of steep cliffs rolling down to the shore gives it a beautiful setting.",
+    "pic1": "https://www.planetware.com/photos-large/ISR/israel-haifa-bahai-shrine-and-gardens.jpg",
+    "pic2": "https://www.planetware.com/photos-large/ISR/israel-haifa-downtown-haifa-panorama.jpg"
+  },
+  {
+    "name": "Sea of Galilee",
+    "description": "Forever entwined with the story of Jesus Christ, who carried out much of his ministry work in the area, the Sea of Galilee region is a beautiful place to visit, full of things to do and tourist attractions, from ancient archaeological remnants to drop-dead gorgeous scenery.",
+    "pic1": "https://www.planetware.com/photos-large/ISR/israel-sea-of-galilee-tiberias.jpg",
+    "pic2": "https://www.planetware.com/photos-large/ISR/israel-sea-of-galilee-kibbutz-ginosar.jpg"
+  },
+  {
+    "name": "Negev",
+    "description": "The Negev Region is a desert adventurer's dream packed with tourist attractions, from ancient ruins to ruggedly handsome desert scenery.",
+    "pic1": "https://www.planetware.com/photos-large/ISR/israel-negev-shivta-ruins.jpg",
+    "pic2": "https://www.planetware.com/photos-large/ISR/israel-negev-makhtesh-ramon.jpg"
+  },
+  {
+    "name": "Dead Sea",
+    "description": "At more than 400 meters below sea level, this Great Rift Valley inland lake has an incredibly high salt content due to evaporation being the only water outlet. This is what causes the bizarre buoyancy of the water.",
+    "pic1": "https://www.planetware.com/wpimages/2021/02/israel-dead-sea-region-top-attractions-kalia-beach.jpg",
+    "pic2": "https://www.planetware.com/photos-large/ISR/israel-dead-sea-qumran-cave-of-the-dead-sea-scrolls.jpg"
+  },
+  {
+    "name": "Bethlehem",
+    "description": "Bethlehem is famous for being the place of Jesus Christ's birth and has been celebrated in Christmas carols and hymns through the centuries, but the bustle of the modern city can be a surprise for some visitors.",
+    "pic1": "https://www.planetware.com/photos-large/ISR/palestinian-territories-bethlehem-church-of-the-nativity.jpg",
+    "pic2": "https://www.planetware.com/photos-large/ISR/palestinian-territories-bethlehem-mar-saba-monastery.jpg"
+  },
+  {
+    "name": "Nablus",
+    "description": "With a history stretching right back to Abraham's arrival in the land of Canaan, Nablus is one of the best places to visit for travelers seeking out significant religious sites.",
+    "pic1": "https://www.planetware.com/photos-large/ISR/palestinian-territories-nablus-mount-gerizim.jpg",
+    "pic2": "https://www.planetware.com/photos-large/ISR/israel-dead-sea-wadi-arugot2.jpg"
+  },
+  {
+    "name": "Akko",
+    "description": "For history fans, Akko is one of the best places to visit in the country thanks to the preservation of its stone architecture. There are plentiful historic tourist attractions and things to do amid its squiggle of narrow alleyways with khans (caravanserais), fortifications, and Crusader-era monuments to explore.",
+    "pic1": "https://www.planetware.com/photos-large/ISR/israel-akko-fortifications.jpg",
+    "pic2": "https://www.planetware.com/photos-large/ISR/israel-acre-ahmed-al-jazzar-mosque.jpg"
+  },
+  {
+    "name": "Jericho",
+    "description": "Jericho may not look like much at first, but this is one of the oldest continuously inhabited towns in the world, which makes it one of the best places to visit in the West Bank for anyone interested in history.",
+    "pic1": "https://www.planetware.com/photos-large/ISR/palestinian-territories-jericho-mount-of-temptation.jpg",
+    "pic2": "https://www.planetware.com/photos-large/ISR/palestinian-territories-jericho-wadi-qelt.jpg"
+  },
+  {
+    "name": "Eilat",
+    "description": "Eilat is Israel's only Red Sea resort, sitting on their teensy stretch of Red Sea shoreline, squeezed in between Jordan and Egypt.",
+    "pic1": "https://www.planetware.com/photos-large/ISR/israel-eilat-underwater-observatory.jpg",
+    "pic2": "https://www.planetware.com/photos-large/ISR/israel-eilat-beaches.jpg"
+  },
+  {
+    "name": "Golan",
+    "description": "The golan heights in the far north of israel is often overlooked because it’s just that wee bit off the beaten track for many tourists. But if you have the time, this amazing part of the world has some truly wonderful sites and natural marvels that may just knock your socks off – and also have you wishing you could stay longer!",
+    "pic1": "https://igoogledisrael.com/wp-content/uploads/2011/11/NimrodFortress_igi.jpg",
+    "pic2": "https://igoogledisrael.com/wp-content/uploads/2018/11/cherry-e1573198205410.jpg"
+  }
+]
