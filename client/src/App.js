@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
-import HomePage from "./View/Pages/HomePage";
-import CityPage from "./View/Pages/CityPage";
-import AboutPage from "./View/Pages/AboutPage";
+import HomePage from "./View/Pages/HomePage/HomePage.jsx";
+import CityPage from "./View/Pages/CityPage/CityPage.jsx";
+import AboutPage from "./View/Pages/AboutPage/AboutPage";
 
 import "./App.css";
 
