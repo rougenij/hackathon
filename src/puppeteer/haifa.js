@@ -3,18 +3,18 @@ const express = require("express");
 const Site = require("../models/site.model");
 
 const url =
-  "https://www.planetware.com/tourist-attractions-/dead-sea-isr-st-ds.htm";
+  "https://www.planetware.com/tourist-attractions-/haifa-isr-ha-h.htm";
 (async () => {
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
   await page.goto(url);
 
-  const deadSeaArr = await page.evaluate(() => {
+  const HaifaArr = await page.evaluate(() => {
     try {
       const nameArr = [];
       for (let i = 0; i < document.querySelectorAll(".sitename").length; i++) {
         nameArr.push({
-          location: "Dead Sea",
+          location: "Haifa",
           category: "Culture",
           name: document.querySelectorAll(".sitename")[i].innerText,
           description: document.querySelectorAll(".site_desc")[i].innerText,
@@ -27,11 +27,11 @@ const url =
     }
   });
   //Needs to be Automated to add data
-  const deadSeaCollection = async () => {
+  const HaifaCollection = async () => {
     try {
-      deadSeaArr.forEach(async (location) => {
-        const deadSea = await new Site(location);
-        await deadSea.save();
+      HaifaArr.forEach(async (location) => {
+        const Haifa = await new Site(location);
+        await Haifa.save();
       });
       // res.status(200).send("Dead Sea has been Added to DB");
     } catch (err) {
@@ -40,8 +40,7 @@ const url =
     }
   };
 
-  deadSeaCollection();
+  //HaifaCollection();
 
-  module.exports = deadSeaArr;
   await browser.close();
 })();
