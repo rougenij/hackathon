@@ -5,27 +5,44 @@ import './CityPage.css';
 import cultourApi from "../../../Api/cultourApi";
 
 const CityPage = () => {
-
-	const [places, setPlaces] = useState([]);
+	const [loading, setLoading] = useState(true);
+  const [sites, setSites] = useState([]);
+	//const [places, setPlaces] = useState([]);
 	//const [curCity, setCurCity] = useState("");
 
 	const currentCity = 'Haifa';
 	const currentList = CitiesList.filter((places) => places.location==="Haifa");
 
 	useEffect(() => {
-		getReq();
-	}, [places]);
+    const fetchData = async () => {
+      setLoading(true);
+      try {
+        const { data: response } = await cultourApi.get("sites");
+        setSites(response.data.sites);
+      } catch (error) {
+        console.error(error.message);
+      }
+      setLoading(false);
+    };
 
-	const getReq = async () => {
-		try {
-			const { requestData } = await cultourApi.get("sites");
-			setPlaces(requestData);
-			console.log(places)
-		} catch (e) {
-			console.error(e.message)
-		}
-	};
-	console.log(places)
+    fetchData();
+  }, []);
+
+
+	// useEffect(() => {
+	// 	getReq();
+	// }, [places]);
+
+	// const getReq = async () => {
+	// 	try {
+	// 		const { requestData } = await cultourApi.get("sites");
+	// 		setPlaces(requestData);
+	// 		console.log(places)
+	// 	} catch (e) {
+	// 		console.error(e.message)
+	// 	}
+	// };
+	// console.log(places)
 	
 	return (
 		<div className="container">
