@@ -1,8 +1,10 @@
 const express = require("express");
-const { addSite } = require("../controllers/site.controller");
+const { addSite, getAllSites } = require("../controllers/site.controller");
 
 // API ROUTER
 const siteRouter = express.Router();
+
+siteRouter.get("/", getAllSites);
 
 siteRouter.post("/sites", addSite);
 
