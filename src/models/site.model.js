@@ -21,6 +21,10 @@ const siteSchema = new mongoose.Schema({
     required: true,
     //Description of the place
   },
+  image: {
+    type: String,
+    required: true,
+  },
 });
 
 const Site = mongoose.model("Site", siteSchema);
