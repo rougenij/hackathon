@@ -10,8 +10,8 @@ function AboutPage(props) {
     const fetchData = async () => {
       setLoading(true);
       try {
-        const { data: response } = await cultourApi.get("/sites");
-        setSites(response.data.sites);
+        const { data } = await cultourApi.get("/api/sites");
+        setSites(data);
       } catch (error) {
         console.error(error.message);
       }
@@ -21,6 +21,13 @@ function AboutPage(props) {
     fetchData();
   }, []);
 
+  const displayData = () => {
+    console.log(sites);
+    return sites.map((site, i) => {
+      return <div key={i}>{site._id}</div>;
+    });
+  };
+
   return (
     <div className="about-page">
       <h1>Welcome to about page</h1>
@@ -28,9 +35,7 @@ function AboutPage(props) {
       {!loading && (
         <div>
           <h2>Bank Accounts</h2>
-          {sites.map((site) => (
-            <div>{site}</div>
-          ))}
+          {displayData()}
         </div>
       )}
     </div>
