@@ -1,11 +1,15 @@
 .Button {
     width: 8em;
     height: 3em;
-    color:#fff;
-    background: #25619F;
+    color: #fff;
     cursor: pointer;
+    background: #25619F;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     border: none;
-    border-radius: 2px;
-    font-weight: 700;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.Button:hover {
+    background: #fff;
+    color: #25619F;
+
 }
