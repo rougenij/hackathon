@@ -1,11 +1,13 @@
 const express = require("express");
-const { addSite, getAllSites } = require("../controllers/site.controller");
+const {
+  getSitesByCityName,
+  getAllCities,
+} = require("../controllers/site.controller");
 
 // API ROUTER
 const siteRouter = express.Router();
 
-siteRouter.get("/sites", getAllSites);
-
-siteRouter.post("/sites", addSite);
+siteRouter.get("/cities", getAllCities);
+siteRouter.get("/cities/:city", getSitesByCityName);
 
 module.exports = siteRouter;

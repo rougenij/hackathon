@@ -1,29 +1,31 @@
 const express = require("express");
 const Site = require("../models/site.model");
+const cities = require("../db/cities.json");
 
-const addSite = async (req, res) => {
+const getSitesByCityName = async (req, res) => {
   try {
-    const site = await new Site(req.body);
-    await site.save();
-    res
-      .status(201)
-      .send({ status: "success", message: "User has been created" });
+    const cityName = req.params.city;
+    const city = await Site.find({ location: cityName });
+    if (!city) return res.status(400).send("No City with this name");
+    res.status(200).send(city);
   } catch (err) {
-    res
-      .status(400)
-      .send({ status: "failed", message: "Failed to create user" });
+    res.status(400).send({ err: err.message });
+  }
+
+  // After clicking explore we get this request
+  // Return The Obj from puppeteer
+  // name,location,catergoy,image,description
+};
+
+const getAllCities = async (req, res) => {
+  try {
+    res.status(200).send(cities);
+  } catch (err) {
+    res.status(400).send({ err: err.message });
   }
 };
 
-const getAllSites = async (req, res) => {
-  try {
-    const sites = await Site.find({});
-    if (!sites)
-      return res.status(404).send("No Locations were found in the Database");
-    res.status(200).send(sites);
-  } catch (err) {
-    res.status(400).send({ status: "failed", message: "Failed to Fetch Data" });
-  }
+module.exports = {
+  getSitesByCityName,
+  getAllCities,
 };
-
-module.exports = { addSite, getAllSites };
