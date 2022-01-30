@@ -1,0 +1,30 @@
+.Card {
+  width: 90vw;
+  height: 60vh;
+  border-radius: 5px;
+}
+
+.Title {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+}
+
+.Image {
+  width: 20%;
+  height: 90%;
+  object-fit: contain;
+}
+
+.Details {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+  justify-content: center;
+  text-align: center;
+  height: 50vh;
+}
+
+.Main {
+  width: 90vw;
+  height: 70vh;
+  display: flex;
+}
