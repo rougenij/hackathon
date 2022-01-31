@@ -10,7 +10,6 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePageCulTour />} />
         <Route path="/:city" element={<CityPage />} />
-    
       </Routes>
     </div>
   );
