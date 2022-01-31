@@ -8,7 +8,13 @@ function CityCard(props) {
     <div className="city-card">
       <figure>
         <figcaption className="city-card-name">{name}</figcaption>
-        <img className="city-card-image" src={pic2} alt={name} />
+        <img
+          className={`city-card-image ${
+            props.index === 0 ? "selected-card" : ""
+          }`}
+          src={pic2}
+          alt={name}
+        />
       </figure>
     </div>
   );
