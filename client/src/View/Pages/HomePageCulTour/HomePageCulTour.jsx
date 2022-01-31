@@ -27,13 +27,6 @@ const citiesArr = [
     pic2: "https://www.planetware.com/photos-large/ISR/israel-haifa-downtown-haifa-panorama.jpg",
   },
   {
-    name: "Sea of Galilee",
-    description:
-      "Forever entwined with the story of Jesus Christ, who carried out much of his ministry work in the area, the Sea of Galilee region is a beautiful place to visit, full of things to do and tourist attractions, from ancient archaeological remnants to drop-dead gorgeous scenery.",
-    pic1: "https://www.planetware.com/photos-large/ISR/israel-sea-of-galilee-tiberias.jpg",
-    pic2: "https://www.planetware.com/photos-large/ISR/israel-sea-of-galilee-kibbutz-ginosar.jpg",
-  },
-  {
     name: "Negev",
     description:
       "The Negev Region is a desert adventurer's dream packed with tourist attractions, from ancient ruins to ruggedly handsome desert scenery.",
@@ -60,34 +53,6 @@ const citiesArr = [
       "With a history stretching right back to Abraham's arrival in the land of Canaan, Nablus is one of the best places to visit for travelers seeking out significant religious sites.",
     pic1: "https://www.planetware.com/photos-large/ISR/palestinian-territories-nablus-mount-gerizim.jpg",
     pic2: "https://www.planetware.com/photos-large/ISR/israel-dead-sea-wadi-arugot2.jpg",
-  },
-  {
-    name: "Akko",
-    description:
-      "For history fans, Akko is one of the best places to visit in the country thanks to the preservation of its stone architecture. There are plentiful historic tourist attractions and things to do amid its squiggle of narrow alleyways with khans (caravanserais), fortifications, and Crusader-era monuments to explore.",
-    pic1: "https://www.planetware.com/photos-large/ISR/israel-akko-fortifications.jpg",
-    pic2: "https://www.planetware.com/photos-large/ISR/israel-acre-ahmed-al-jazzar-mosque.jpg",
-  },
-  {
-    name: "Jericho",
-    description:
-      "Jericho may not look like much at first, but this is one of the oldest continuously inhabited towns in the world, which makes it one of the best places to visit in the West Bank for anyone interested in history.",
-    pic1: "https://www.planetware.com/photos-large/ISR/palestinian-territories-jericho-mount-of-temptation.jpg",
-    pic2: "https://www.planetware.com/photos-large/ISR/palestinian-territories-jericho-wadi-qelt.jpg",
-  },
-  {
-    name: "Eilat",
-    description:
-      "Eilat is Israel's only Red Sea resort, sitting on their teensy stretch of Red Sea shoreline, squeezed in between Jordan and Egypt.",
-    pic1: "https://www.planetware.com/photos-large/ISR/israel-eilat-underwater-observatory.jpg",
-    pic2: "https://www.planetware.com/photos-large/ISR/israel-eilat-beaches.jpg",
-  },
-  {
-    name: "Golan",
-    description:
-      "The golan heights in the far north of israel is often overlooked because it’s just that wee bit off the beaten track for many tourists. But if you have the time, this amazing part of the world has some truly wonderful sites and natural marvels that may just knock your socks off – and also have you wishing you could stay longer!",
-    pic1: "https://igoogledisrael.com/wp-content/uploads/2011/11/NimrodFortress_igi.jpg",
-    pic2: "https://igoogledisrael.com/wp-content/uploads/2018/11/cherry-e1573198205410.jpg",
   },
 ];
 

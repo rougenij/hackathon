@@ -5,7 +5,8 @@ import "./City.style.css";
 function City(props) {
   const { name, description } = props.city;
   let routName = name.replace(/\s+/g, "");
-  routName = routName.toLowerCase();
+  // routName = routName.toLowerCase();
+  console.log(routName);
 
   return (
     <div className="city">
