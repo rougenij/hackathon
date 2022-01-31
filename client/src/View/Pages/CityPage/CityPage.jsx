@@ -25,27 +25,6 @@ const CityPage = () => {
     }
   };
 
-<<<<<<< HEAD
-	
-
-	return (
-		<div> <NavBar id="logo-city-page"/>
-			<div className="container">
-				<h2 className="city">{params.city}</h2>
-				{sites.map((place, ind) => {
-					return (
-						<div className="place" key={`place${ind}`}>
-							<h3 className="place-name">{(place.name).split(" ").slice(1).join(" ")}</h3>
-							<div className="place-description">{place.description}</div>
-							<img className="place-image" src={place.image} alt=""/>
-						</div>
-					)
-				})}
-			</div>
-		</div>
-	)
-}
-=======
   return (
     <div>
       {" "}
@@ -55,7 +34,7 @@ const CityPage = () => {
         {sites.map((place, ind) => {
           return (
             <div className="place" key={`place${ind}`}>
-              <h3 className="place-name">
+              <h3 className="place-namegit">
                 {place.name.split(". ").slice(1).join(" ") || place.name}
               </h3>
               <div className="place-description">{place.description}</div>
@@ -67,6 +46,5 @@ const CityPage = () => {
     </div>
   );
 };
->>>>>>> emanuel
 
 export default CityPage;
