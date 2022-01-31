@@ -27,8 +27,10 @@ const CityPage = () => {
 		}
 	};
 
+	
+
 	return (
-		<div> <NavBar />
+		<div> <NavBar id="logo-city-page"/>
 			<div className="container">
 				<h2 className="city">{params.city}</h2>
 				{sites.map((place, ind) => {

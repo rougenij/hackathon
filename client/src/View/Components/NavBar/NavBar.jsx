@@ -2,13 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./NavBar.style.css";
 import logo from "../../assets/images/logo.png"
-function NavBar() {
+function NavBar(props) {
   return (
-    <div className="NavBar">
-      <Link className="Link" to={"/"}><img className="Logo" src={logo}></img></Link> 
- 
-
-    
+    <div className="NavBar" id={props.id}>
+      <Link className="Link" to={"/"} ><img className="Logo" src={logo}></img></Link> 
     </div>
   );
 }
