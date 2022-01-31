@@ -9,8 +9,8 @@ function CitiesCarousel(props) {
   return (
     <div className="cities-carousel">
       <div className="cities-carousel-cities">
-        {cities.map((city) => (
-          <CityCard key={city.name} city={city} />
+        {cities.map((city, index) => (
+          <CityCard index={index} key={city.name} city={city} />
         ))}
       </div>
       <div className="carousel-buttons-container">

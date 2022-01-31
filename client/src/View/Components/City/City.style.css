@@ -35,6 +35,7 @@
   margin-top: 1rem;
   box-shadow: 0.1rem 0.2rem 0.4rem black;
   animation: slide-up 2s;
+  font-size: 1.5rem;
 }
 
 .home-page .city-explore-button:hover {
