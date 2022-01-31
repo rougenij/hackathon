@@ -1,0 +1,22 @@
+.cities-carousel {
+  width: 50%;
+}
+.cities-carousel-cities {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  transform: translateX(150px);
+}
+
+.city-card-image {
+  width: 100%;
+  height: 40vh;
+  border-radius: 0.5rem;
+  object-fit: cover;
+  box-shadow: 2px 4px 8px black;
+}
+
+.carousel-buttons-container {
+  display: flex;
+}
