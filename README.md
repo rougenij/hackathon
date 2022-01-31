@@ -19,11 +19,11 @@
 _______________________
 ## Architecture 
 
-![img1](src/View/assets/images/architecture.PNG)
+![img1](client/src/View/assets/images/architecture.PNG)
 
 ____________________
 ## Layout 
-![img1](src/View/assets/images/image.png)
+![img1](client/src/View/assets/images/image.png)
 
 _____________________
 ## Challenges & Lessons Learned
