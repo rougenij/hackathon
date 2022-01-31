@@ -29,19 +29,18 @@ const CityPage = () => {
 
 	return (
 		<div> <NavBar />
-		
-		<div className="container">
-			<h2 className="city">{params.city}</h2>
-			{sites.map((place, ind) => {
-				return (
-					<div className="place" key={`place${ind}`}>
-						<h3 className="place-name">{(place.name).slice(2)}</h3>
-						<div className="place-description">{place.description}</div>
-						<img className="place-image" src={place.image} alt=""/>
-					</div>
-				)
-			})}
-		</div>
+			<div className="container">
+				<h2 className="city">{params.city}</h2>
+				{sites.map((place, ind) => {
+					return (
+						<div className="place" key={`place${ind}`}>
+							<h3 className="place-name">{(place.name).split(" ").slice(1).join(" ")}</h3>
+							<div className="place-description">{place.description}</div>
+							<img className="place-image" src={place.image} alt=""/>
+						</div>
+					)
+				})}
+			</div>
 		</div>
 	)
 }
