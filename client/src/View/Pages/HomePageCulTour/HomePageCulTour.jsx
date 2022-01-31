@@ -3,7 +3,7 @@ import cultourApi from "../../../Api/cultourApi";
 import City from "../../Components/City/City";
 import CitiesCarousel from "../../Components/CitiesCarousel/CitiesCarousel";
 import NavBar from "../../Components/NavBar/NavBar";
-import logo from "../../assets/images/CultOur.png";
+import logo from "../../assets/images/logo.png";
 import "./HomePageCulTour.style.css";
 
 function HomePageCulTour() {
