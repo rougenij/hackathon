@@ -27,20 +27,18 @@ const url =
     }
   });
   //Needs to be Automated to add data
-  const deadSeaCollection = async () => {
+  const NegevCollection = async () => {
     try {
-      deadSeaArr.forEach(async (location) => {
-        const deadSea = await new Site(location);
-        await deadSea.save();
+      Negev.forEach(async (location) => {
+        const negev = await new Site(location);
+        await negev.save();
       });
-      // res.status(200).send("Dead Sea has been Added to DB");
     } catch (err) {
-      // res.status(400).send({ status: "failed", message: "Failed to Fetch Data" });
       console.log(err.message);
     }
   };
 
-  deadSeaCollection();
+  NegevCollection();
 
   await browser.close();
 })();

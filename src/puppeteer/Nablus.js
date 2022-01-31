@@ -26,6 +26,7 @@ const url =
       console.log(err.message);
     }
   });
+  console.log(nablus);
   //Needs to be Automated to add data
   const deadSeaCollection = async () => {
     try {

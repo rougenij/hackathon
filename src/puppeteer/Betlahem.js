@@ -28,20 +28,18 @@ const url =
     console.log(Betlehem);
   });
   //Needs to be Automated to add data
-  //   const EilatCollection = async () => {
-  //     try {
-  //       EilatArr.forEach(async (location) => {
-  //         const deadSea = await new Site(location);
-  //         await deadSea.save();
-  //       });
-  //       // res.status(200).send("Dead Sea has been Added to DB");
-  //     } catch (err) {
-  //       // res.status(400).send({ status: "failed", message: "Failed to Fetch Data" });
-  //       console.log(err.message);
-  //     }
-  //   };
+  const BethlehemCollection = async () => {
+    try {
+      Betlehem.forEach(async (location) => {
+        const bethlehem = await new Site(location);
+        await bethlehem.save();
+      });
+    } catch (err) {
+      console.log(err.message);
+    }
+  };
 
-  //   EilatCollection();
+  BethlehemCollection();
 
   await browser.close();
 })();

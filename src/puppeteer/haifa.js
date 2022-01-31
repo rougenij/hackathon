@@ -33,14 +33,12 @@ const url =
         const Haifa = await new Site(location);
         await Haifa.save();
       });
-      // res.status(200).send("Dead Sea has been Added to DB");
     } catch (err) {
-      // res.status(400).send({ status: "failed", message: "Failed to Fetch Data" });
       console.log(err.message);
     }
   };
 
-  //HaifaCollection();
+  HaifaCollection();
 
   await browser.close();
 })();

@@ -26,22 +26,19 @@ const url =
       console.log(err.message);
     }
   });
-  console.log(telaviv);
   //Needs to be Automated to add data
-  //   const EilatCollection = async () => {
-  //     try {
-  //       EilatArr.forEach(async (location) => {
-  //         const deadSea = await new Site(location);
-  //         await deadSea.save();
-  //       });
-  //       // res.status(200).send("Dead Sea has been Added to DB");
-  //     } catch (err) {
-  //       // res.status(400).send({ status: "failed", message: "Failed to Fetch Data" });
-  //       console.log(err.message);
-  //     }
-  //   };
+  const TelAvivCollection = async () => {
+    try {
+      telaviv.forEach(async (location) => {
+        const telaviv = await new Site(location);
+        await telaviv.save();
+      });
+    } catch (err) {
+      console.log(err.message);
+    }
+  };
 
-  //   EilatCollection();
+  TelAvivCollection();
 
   await browser.close();
 })();

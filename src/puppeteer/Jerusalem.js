@@ -27,6 +27,19 @@ const url =
     }
   });
 
-  console.log(Jerusalem);
+  //Needs to be Automated to add data
+  const JerusalemCollections = async () => {
+    try {
+      HaifaArr.forEach(async (location) => {
+        const Haifa = await new Site(location);
+        await Haifa.save();
+      });
+    } catch (err) {
+      console.log(err.message);
+    }
+  };
+
+  HaifaCollection();
+
   await browser.close();
 })();
